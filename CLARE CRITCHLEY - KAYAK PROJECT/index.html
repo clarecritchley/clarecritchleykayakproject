@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Halifax Canoe & Kayak</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <script>
+        // Menu Script 
+
+        $(document).ready(function() {
+            $("#DropDownMenu").hide();
+
+        })
+
+        $(document).ready(function() {
+                $("#hamburger").click(function() {
+                $("#DropDownMenu").toggle("slow");
+                console.log("ready")
+                });
+
+            });
+     </script>
+    <header>
+
+        
+ <!--Hamburger Nav Paddle and Title-->
+
+    <div id="mainheader">
+        <div id="nav">
+            <button id="hamburger"><img src="images/hamburger.png" alt="Menu" width="50px"></button>
+            <h1 id="TopTitle">Halifax Canoe and Kayak</h1>
+            <img id="paddle" src="images/paddle-white.png" alt="paddle">
+    </div>
+
+ <!--Nav Menu -->
+    <nav id="DropDownMenu">
+        <ul id="MenuItems">
+            <li>Home</li>
+            <li>Book Trip</li>
+            <li>Admin Login</li>
+        </ul>
+    </nav>
+</header>
+    
+ <!--Canoe Photo With Text on Top -->
+    <div class="container">
+        <img src="images/canoe.jpg" width="700" alt="canoe">
+        <div class="centered">Come Experience Canada</div>
+      </div>
+
+ <!--Headers & Text with Trip Info & Lorem Ipsum Filler -->
+ <main id="content">
+    <h1>Upcoming Adventures</h1>
+
+    <h2>Halifax</h2>
+
+    <p>
+        Date: 2022-04-12
+        
+        <br>
+        Duration: 4 days
+
+        <h3>Summary</h3>
+
+
+        <p>Lorem ipsum dolor sit amet. Et fugiat quos aut fuga 
+        rerum et neque similique id quis delectus. Aut cumque
+         voluptas sed animi nihil non quis Quis est corrupti 
+         cumque ut doloribus laboriosam et vero ipsam! Et mollitia 
+         facere qui incidunt voluptas est temporibus magni. 
+         Sed laudantium soluta sit voluptas placeat qui unde 
+         qui excepturi molestiae.</p>
+
+         <br>
+
+         <h2>Sydney</h2>
+     
+         <p>
+             Date: 2022-05-04
+             
+             <br>
+             Duration: 2 days
+     
+             <h3>Summary</h3>
+     
+     
+             <p>Lorem ipsum dolor sit amet. Et fugiat quos aut fuga 
+             rerum et neque similique id quis delectus. Aut cumque
+              voluptas sed animi nihil non quis Quis est corrupti 
+              cumque ut doloribus laboriosam et vero ipsam! Et mollitia 
+              facere qui incidunt voluptas est temporibus magni. 
+              Sed laudantium soluta sit voluptas placeat qui unde 
+              qui excepturi molestiae.</p>
+    </p>
+</main>
+</body>
+</html>
